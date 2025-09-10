@@ -44,13 +44,18 @@
     -webkit-text-fill-color: transparent;
     animation: glow 1.5s infinite alternate;
     margin-bottom: 10px;
+
+    /* ép chữ chỉ trên một hàng */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   @keyframes glow {
     0% {text-shadow: 0 0 5px rgba(255,64,129,0.5);}
     100% {text-shadow: 0 0 15px rgba(255,152,0,0.8);}
   }
   .birthday img {
-    max-width: 100%;
+    max-width: 50%; /* giảm một nửa kích thước ảnh */
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     animation: bounce 1.5s infinite alternate;
@@ -86,8 +91,8 @@
 </div>
 
 <div class="birthday" id="birthday">
-  <h2>🎉HAPPY BIRTHDAY🎉 </h2> 
-  <img src="https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/534620905_1290397249282705_6155974957721797827_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHRyM0jN9j2y64FYd60Ke0KmHhtNrZ6vXKYeG02tnq9cq85RErTINd5EmdYMbLcDxumO7vgVntF2D39BGavzRqe&_nc_ohc=WuOCUimUeE8Q7kNvwEyu6ee&_nc_oc=Adm8AE--MSTIypkWcR_oHd0eLTiKufkNK31ATM6yalg_oSfc47GRWdxyBkRX5QjY6MA&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=gw4pmIN268NzHuXYjqMhuQ&oh=00_AfYtXsZyjTPKu0pktKayxRaRhG02WroFOjav__ZleXqUDQ&oe=68C79317" alt="Happy Birthday"> 
+   <h2>🎉HAPPY BIRTHDAY🎉</h2>  
+  <img src="https://scontent.fsgn8-4.fna.fbcdn.net/v/t39.30808-6/534620905_1290397249282705_6155974957721797827_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHRyM0jN9j2y64FYd60Ke0KmHhtNrZ6vXKYeG02tnq9cq85RErTINd5EmdYMbLcDxumO7vgVntF2D39BGavzRqe&_nc_ohc=WuOCUimUeE8Q7kNvwEyu6ee&_nc_oc=Adm8AE--MSTIypkWcR_oHd0eLTiKufkNK31ATM6yalg_oSfc47GRWdxyBkRX5QjY6MA&_nc_zt=23&_nc_ht=scontent.fsgn8-4.fna&_nc_gid=JiT-Dt1l7YZ_ya--eBbjVQ&oh=00_AfZEh6bTXvXIH5-Nh_Y-Zux3ORgvDy54E_DYKK65tBe-kQ&oe=68C79317" alt="Happy Birthday"> 
   <p> It's your birthday. We gonna celebrate cho đến hết ngày🥳 </p> 
   <p> Sinh nhật vui vẻ, luôn cười tươi nhé. Hehe </p>
   <iframe id="ytPlayer" src="" allow="autoplay"></iframe>
@@ -155,5 +160,3 @@
 
 </body>
 </html>
-
- 
